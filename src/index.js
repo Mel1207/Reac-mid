@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Greetings from './App';
+import Books from './App';
 // import App from './App'
 
 ReactDOM.render(
-  <>
-    <Greetings />
-  </>,
+  <Books />,
   document.getElementById('root')
 );
 

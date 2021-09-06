@@ -4,3 +4,26 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.book {
+  padding: 20px;
+  border: 1px solid red;
+  width: max-content;
+  margin: 10px auto 20px;
+  border-radius: 10px;
+}
+
+.img {
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+p {
+  color: rgba(#000, 0.3);
+}
