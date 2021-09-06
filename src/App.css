@@ -5,12 +5,20 @@
   font-family: sans-serif;
 }
 
+.books-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .book {
   padding: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: max-content;
   margin: 10px auto 20px;
   border-radius: 10px;
+  box-shadow: 7px 11px 41px 10px rgba(121, 121, 121, 0.1);
 }
 
 .img {
@@ -20,10 +28,20 @@
   width: 200px;
 }
 
+h1 {
+  color: rgb(44, 153, 216);
+}
+
 h1, p {
   text-align: center;
 }
 
 p {
-  color: rgba(#000, 0.3);
+  color: rgb(102, 102, 102);
+}
+
+@media screen and (max-width: 768px) {
+  .books-container {
+    grid-template-columns: 1fr;
+  }
 }

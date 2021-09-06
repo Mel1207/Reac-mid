@@ -3,7 +3,9 @@ import './App.css';
 
 function Books() {
   return ( 
-    <section>
+    <section className="books-container">
+      <Book />
+      <Book />
       <Book />
       <Book />
       <Book />
