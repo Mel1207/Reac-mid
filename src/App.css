@@ -41,10 +41,6 @@ h1, p {
   text-align: center;
 }
 
-p {
-  color: rgb(102, 102, 102);
-}
-
 @media screen and (max-width: 768px) {
   .books-container {
     grid-template-columns: 1fr;
