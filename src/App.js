@@ -20,6 +20,7 @@ const Book = () => {
       <CoverImg />
       <Title />
       <Author />
+      <TextBody />
     </article>
   );
 }
@@ -33,9 +34,18 @@ const authorStyle = {
   letterSpacing: '1px'
 }
 
-const Author = () => <p style={authorStyle}>by: Mel John Pualon</p>
+const textStyle = {
+  color: '#747474',
+  fontSize: '15px',
+  marginTop: '15px',
+  textAlign: 'left'
+}
 
-const Person = () => <h3>This is Mel</h3>
-const Message = () => <p>This is my message Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, reprehenderit.</p>
+const Author = () => <p style={authorStyle}>by: Mel John Pualon</p>
+const TextBody = () => {
+  return(
+    <p style={textStyle}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus distinctio omnis mollitia adipisci impedit magni labore qui consectetur officiis delectus!</p>
+  );
+}
 
 export default Books;

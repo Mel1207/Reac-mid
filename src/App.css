@@ -15,7 +15,7 @@
 .book {
   padding: 20px;
   /* border: 1px solid red; */
-  width: max-content;
+  width: 380px;
   margin: 10px auto 20px;
   border-radius: 10px;
   box-shadow: 7px 11px 41px 10px rgba(121, 121, 121, 0.1);
