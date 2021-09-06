@@ -22,7 +22,7 @@ const Book = () => {
   );
 }
 
-const CoverImg = () =>  <img src="https://picsum.photos/200" className="img" alt="this is a puppy" />
+const CoverImg = () =>  <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?cs=srgb&dl=pexels-thisisengineering-3861969.jpg&fm=jpg" className="img" alt="this is a puppy" />
 
 const Title = () => <h1>The foundation of react components</h1>
 const Author = () => <p>by: Mel John Pualon</p>
