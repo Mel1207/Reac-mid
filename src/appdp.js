@@ -3,11 +3,14 @@
 // think of module as a file
 
 import React from "react";
+import Banner from "./components/header/Banner"
+
 import './styles.css';
 import { name, age, person } from "./data";
 function App () {
     return(
         <div>
+            <Banner />
             <p>This is my content</p>
             <h1>Name: {name}</h1>
             <h2>Age: {age}</h2>
