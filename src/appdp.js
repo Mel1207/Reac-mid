@@ -4,9 +4,9 @@
 
 import React from "react";
 import Banner from "./components/header/Banner"
-
 import './styles.css';
 import { name, age, person } from "./data";
+
 function App () {
     return(
         <div>

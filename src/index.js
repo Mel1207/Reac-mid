@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './appdp'
+import ClassBase from './ClassBase'
+// import App from './appdp'
 // import Books from './App';
 
 
 ReactDOM.render(
-  <App />,
+  <ClassBase />,
   document.getElementById('root')
 );
 

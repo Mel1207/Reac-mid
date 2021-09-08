@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import {name} from "../../data"
 
 export default function Banner() {
