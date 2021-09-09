@@ -10,14 +10,36 @@ export default class Book extends Component {
         }
     }
 
- 
-
     // handleClic() {
     //     console.log('clicked')
     //     console.log(this.state.count)
     // }
-    handleClic = () => {
+    addCount = () => {
         console.log('clicked!')
+        // not a proper way
+        // this.state = {
+        //     count: this.state.count + 1
+        // }
+
+        this.setState({
+            count: this.state.count + 1
+        })
+        console.log(this.state.count)
+    }
+    lowerCount = () => {
+        console.log('clicked!')
+
+        this.setState({
+            count: this.state.count - 1
+        })
+        console.log(this.state.count)
+    }
+    resetCount = () => {
+        console.log('clicked!')
+
+        this.setState({
+            count: this.state.count = 0
+        })
         console.log(this.state.count)
     }
 
@@ -32,7 +54,10 @@ export default class Book extends Component {
                 <div>
                     <h4>Title: {book} </h4>
                     <h5>Author: {author} </h5>
-                    <button onClick={this.handleClic}>Add count</button>
+                    <h3>count: {this.state.count}</h3>
+                    <button onClick={this.addCount}>Add count</button>
+                    <button onClick={this.resetCount}>reset count</button>
+                    <button onClick={this.lowerCount}>lower count</button>
                 </div>
             </div>
         )
