@@ -3,13 +3,17 @@ import React, { Component } from 'react'
 export default class Book extends Component {
     render() {
         console.log(this.props);
-        const {book, author} = this.props.info;
+        const {img, book, author} = this.props.info;
 
         return (
-            <article>
-                <h3>Book: {book} </h3>
-                <h5>Author: {author} </h5>
-            </article>
+            <div className="book-card">
+                <img src={img} width="200" alt="book" />
+
+                <div>
+                    <h4>Title: {book} </h4>
+                    <h5>Author: {author} </h5>
+                </div>
+            </div>
         )
     }
 }

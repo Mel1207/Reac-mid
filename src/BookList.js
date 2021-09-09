@@ -26,8 +26,7 @@ export default class BookList extends Component {
         // reduce
 
         return (
-            <section>
-                <h3>This is our Booklist</h3>
+            <section className="section">
                 {this.state.books.map((item, i) => <Book key={i} info={item}></Book>)}
                 {/* react looks for something unique key or id for every array of component we will generate */}
                 {/* <Book /> */}
