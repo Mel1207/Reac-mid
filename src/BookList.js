@@ -11,6 +11,9 @@ export default class BookList extends Component {
         }
     }
 
+    handleDelete = () => {
+        console.log('im from parent component')
+    }
     // this.setState({})
     render() {
         // const books = this.state.books.map(item => item.book);
@@ -27,7 +30,7 @@ export default class BookList extends Component {
 
         return (
             <section className="section">
-                {this.state.books.map((item, i) => <Book key={i} info={item}></Book>)}
+                {this.state.books.map((item, i) => <Book key={i} info={item} handleDelete={this.handleDelete}></Book>)}
                 {/* react looks for something unique key or id for every array of component we will generate */}
                 {/* <Book /> */}
 
