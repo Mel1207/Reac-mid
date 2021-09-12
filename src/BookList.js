@@ -11,9 +11,15 @@ export default class BookList extends Component {
         }
     }
 
-    handleDelete = () => {
-        console.log('im from parent component')
-    }
+    handleDelete = id => {
+        console.log('im from parent component', id);
+        const sortedBooks = this.state.books.filter((item) => item.id !== id)
+
+        this.setState({
+            books: sortedBooks
+        })
+    
+    };
     // this.setState({})
     render() {
         // const books = this.state.books.map(item => item.book);

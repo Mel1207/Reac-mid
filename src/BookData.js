@@ -29,6 +29,12 @@ const books = [
         book: 'Book number 5',
         author: 'Jax doe'
     },
+    {
+        id: 6,
+        img: 'https://www.jdandj.com/uploads/8/0/0/8/80083458/action-book-cover-designs-for-authors-5_orig.jpg',
+        book: 'Book number 5',
+        author: 'Jax doe'
+    },
     
 ]
 
