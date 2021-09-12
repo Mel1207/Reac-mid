@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Button from './Button'
+
 
 export default class Book extends Component {
     constructor(props) {
@@ -58,7 +58,7 @@ export default class Book extends Component {
                     <h4>Title: {book} </h4>
                     <h5>Author: {author} </h5>
                     <h3>count: {this.state.count}</h3>
-                    <Button handleDelete={handleDelete} />
+                    <button type='button' onClick={handleDelete}>Delete me</button>
                 </div>
             </div>
         )
