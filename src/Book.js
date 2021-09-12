@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './Button'
 
 export default class Book extends Component {
     constructor(props) {
@@ -6,7 +7,7 @@ export default class Book extends Component {
         // this.handleClic = this.handleClic.bind(this)
 
         this.state={
-            count: 1
+            count: 0
         }
     }
 
@@ -55,9 +56,7 @@ export default class Book extends Component {
                     <h4>Title: {book} </h4>
                     <h5>Author: {author} </h5>
                     <h3>count: {this.state.count}</h3>
-                    <button onClick={this.addCount}>Add count</button>
-                    <button onClick={this.resetCount}>reset count</button>
-                    <button onClick={this.lowerCount}>lower count</button>
+                    <Button />
                 </div>
             </div>
         )
